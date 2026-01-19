@@ -1,0 +1,110 @@
+/*reglas generales*/
+
+/*Media Query*/
+
+/** Reescribir colores */
+
+/** Productos */
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  /* font-family: sans-serif; */
+}
+
+img
+{
+  width: 100%;
+  height: auto;
+}
+
+header h1 > span
+{
+  color: #037bc0;
+}
+
+/* elemento padre hero image */
+.hero-image
+{
+  min-height: 25rem;
+  background-image: url("../img/principal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 90%;
+}
+
+/* elemento hijo hero image */
+.hero-image div
+{
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.466);
+  color: white;
+}
+
+.main_title
+{
+  text-shadow: 3px 0 4px black;
+}
+
+.bg-success
+{
+  background-color: rgb(22, 239, 22)!important;
+}
+
+.bg-secondary
+{
+  background-color: #3f3f3f !important;
+}
+
+footer a
+{
+  color: white;
+}
+
+.btn-zoom
+{
+  transition: all .2s ease;
+}
+
+.btn-zoom:hover
+{
+  transform: scale(1.1);
+}
+
+.btn-bounce
+{
+  animation: bounce 1s ease infinite;
+  animation-delay: 5s;
+}
+
+@keyframes bounce 
+{
+  0%{transform: translateY(3px);}
+  50%{transform: translateY(0px);}
+  100%{transform: translateY(3px);} 
+}
+
+.transformacion img
+{
+  transition: transform .3s;
+}
+
+.transformacion img:hover
+{
+  transform:scale(1.1);
+}
+
+#articulo
+{
+  transition: transform .3s;
+}
+
+#articulo:hover
+{
+  transform:translate(0px,-5px);
+}
